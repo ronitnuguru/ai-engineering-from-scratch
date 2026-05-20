@@ -42,14 +42,22 @@ Thumbs.db
 *.log
 
 data/
+datasets/
 models/
 checkpoints/
 wandb/
 mlruns/
+tensorboard_logs/
 *.pt
 *.pth
 *.onnx
 *.safetensors
 *.bin
 *.h5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.hdf5
+*.joblib
 .gstack/
