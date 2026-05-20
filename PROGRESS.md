@@ -81,9 +81,21 @@
   - Learned: Containers = reproducible environments, Volumes = persistent storage
   - Multi-service pattern: inference server + vector database orchestrated
 
+#### ✅ Lesson 8: Editor Setup (~20 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Reviewed existing VS Code config: settings.json and extensions.json
+  - Created comprehensive SETUP_GUIDE.md (VS Code, Cursor, Windsurf, Vim)
+  - Built install_vscode.sh automation script for extensions + settings
+  - Essential extensions: Python, Pylance, Jupyter, Black, Ruff, GitLens, Remote SSH
+  - Key settings: format on save, type checking, auto-save, notebook scrolling
+  - Remote SSH setup guide for GPU boxes
+  - Keyboard shortcuts reference and troubleshooting guide
+  - **Next step:** Install VS Code, run install_vscode.sh, verify setup
+
 ---
 
 ## Next Up:
-- [ ] Lesson 8: Editor Setup
+- [ ] Install VS Code and verify editor setup
 - [ ] Lesson 9: Data Management
 - [ ] Phase 1: Math Foundations
