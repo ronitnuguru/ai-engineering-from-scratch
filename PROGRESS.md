@@ -74,13 +74,16 @@
   - Created docker-compose.macos.yml (AI dev + Qdrant vector database)
   - Built comprehensive docker_cheatsheet.md (commands, patterns, troubleshooting)
   - Created .dockerignore (excludes models/data from image, uses volumes)
+  - Created verify_docker.sh verification script
+  - **Installed Docker Desktop v29.4.3 + Docker Compose v5.1.3**
+  - Verified: Docker daemon running, hello-world test passed
+  - Resources: 14 CPUs, 7.75GB memory allocated
   - Learned: Containers = reproducible environments, Volumes = persistent storage
   - Multi-service pattern: inference server + vector database orchestrated
-  - **Next step:** Install Docker Desktop manually, then test the setup
 
 ---
 
 ## Next Up:
-- [ ] Install Docker Desktop and test containers
 - [ ] Lesson 8: Editor Setup
+- [ ] Lesson 9: Data Management
 - [ ] Phase 1: Math Foundations
