@@ -1,0 +1,55 @@
+# Dockerfile for macOS (Apple Silicon - CPU only)
+# Use this on M1/M2/M3/M4 Macs where NVIDIA CUDA isn't available
+
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip
+RUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel
+
+# Install PyTorch (CPU version for macOS containers)
+RUN python -m pip install --no-cache-dir \
+    torch==2.3.1 \
+    torchvision==0.18.1 \
+    torchaudio==2.3.1 \
+    --index-url https://download.pytorch.org/whl/cpu
+
+# Install AI/ML libraries
+RUN python -m pip install --no-cache-dir \
+    numpy \
+    pandas \
+    scikit-learn \
+    matplotlib \
+    jupyter \
+    transformers \
+    datasets \
+    accelerate \
+    safetensors \
+    anthropic \
+    openai
+
+# Set working directory
+WORKDIR /workspace
+
+# Mount points for code, models, and data
+VOLUME ["/workspace", "/models", "/data"]
+
+# Expose Jupyter port
+EXPOSE 8888
+
+# Default command
+CMD ["python"]
+
+# Build: docker build -f Dockerfile.macos -t ai-dev-macos .
+# Run: docker run --rm -it -v $(pwd):/workspace -p 8888:8888 ai-dev-macos
+# Jupyter: docker run --rm -it -v $(pwd):/workspace -p 8888:8888 ai-dev-macos \
+#          jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root

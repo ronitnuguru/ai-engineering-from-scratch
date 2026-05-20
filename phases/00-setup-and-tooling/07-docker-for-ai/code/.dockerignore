@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_metadata/
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI/ML specific (don't copy into image, use volumes instead)
+models/
+checkpoints/
+datasets/
+data/
+wandb/
+mlruns/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+*.h5
+*.pkl
+*.pickle
+
+# Logs
+*.log
+logs/
+
+# Documentation
+README.md
+*.md
+!Dockerfile*.md

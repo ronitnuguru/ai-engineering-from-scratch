@@ -66,9 +66,21 @@
   - GPU: Metal (MPS) acceleration available
   - Best practice: one venv per project, never mix pip/conda
 
+#### ✅ Lesson 7: Docker for AI (~60 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Reviewed existing Dockerfile (NVIDIA CUDA) and docker-compose.yml
+  - Created Dockerfile.macos for Apple Silicon (CPU-based PyTorch)
+  - Created docker-compose.macos.yml (AI dev + Qdrant vector database)
+  - Built comprehensive docker_cheatsheet.md (commands, patterns, troubleshooting)
+  - Created .dockerignore (excludes models/data from image, uses volumes)
+  - Learned: Containers = reproducible environments, Volumes = persistent storage
+  - Multi-service pattern: inference server + vector database orchestrated
+  - **Next step:** Install Docker Desktop manually, then test the setup
+
 ---
 
 ## Next Up:
-- [ ] Lesson 7: Docker for AI
+- [ ] Install Docker Desktop and test containers
 - [ ] Lesson 8: Editor Setup
 - [ ] Phase 1: Math Foundations
