@@ -22,9 +22,18 @@
   - Set up `.gitignore` for AI projects
   - Explored repo commit history
 
+#### ✅ Lesson 3: GPU Setup & Cloud (~45 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Verified M4 Pro GPU with Metal support
+  - Benchmarked CPU vs GPU: 1.3x speedup on 5000x5000 matrix
+  - System capacity: 51.5GB unified memory, ~2.9B parameter models
+  - Created Metal benchmark script and Colab notebook
+  - Learned about GPU options: local (Metal), Colab (free), cloud (paid)
+
 ---
 
 ## Next Up:
-- [ ] Lesson 3: GPU Setup and Cloud
 - [ ] Lesson 4: APIs and Keys
+- [ ] Lesson 5: Jupyter Notebooks
 - [ ] Phase 1: Math Foundations
