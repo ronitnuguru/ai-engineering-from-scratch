@@ -42,9 +42,21 @@
   - Installed Anthropic SDK and tested error handling
   - APIs needed: Anthropic (Phase 11+), OpenAI (comparison), HuggingFace (models)
 
+#### ✅ Lesson 5: Jupyter Notebooks (~30 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Created comprehensive jupyter_tutorial.ipynb with all key features
+  - Learned magic commands: %timeit, %%time, %matplotlib inline
+  - Practiced inline visualization with matplotlib and pandas
+  - Keyboard shortcuts cheat sheet created
+  - Tested notebook execution: NumPy ~100x faster than list comprehension
+  - Understood shared kernel state and common traps
+  - Rule: "Explore in notebooks, ship in scripts"
+  - Installed pandas for data manipulation
+
 ---
 
 ## Next Up:
-- [ ] Lesson 5: Jupyter Notebooks
 - [ ] Lesson 6: Python Environments
+- [ ] Lesson 7: Docker for AI
 - [ ] Phase 1: Math Foundations
