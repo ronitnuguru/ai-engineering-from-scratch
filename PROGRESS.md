@@ -54,9 +54,21 @@
   - Rule: "Explore in notebooks, ship in scripts"
   - Installed pandas for data manipulation
 
+#### ✅ Lesson 6: Python Environments (~30 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Created check_environment.py: verified all 4/4 core checks pass
+  - Confirmed proper isolation: packages in .venv/lib/python3.14/site-packages
+  - Built pyproject.toml with optional dependency groups (torch, llm, tools, etc.)
+  - Package manager comparison: uv (10-100x faster), pip (universal), conda (CUDA)
+  - Demo isolation script showing different NumPy versions coexisting
+  - Verified: Python 3.14.5, uv 0.11.15, 6/6 key packages installed
+  - GPU: Metal (MPS) acceleration available
+  - Best practice: one venv per project, never mix pip/conda
+
 ---
 
 ## Next Up:
-- [ ] Lesson 6: Python Environments
 - [ ] Lesson 7: Docker for AI
+- [ ] Lesson 8: Editor Setup
 - [ ] Phase 1: Math Foundations
