@@ -31,9 +31,20 @@
   - Created Metal benchmark script and Colab notebook
   - Learned about GPU options: local (Metal), Colab (free), cloud (paid)
 
+#### ✅ Lesson 4: APIs & Keys (~30 min)
+- **Date:** 2026-05-20
+- **What I Built:**
+  - Learned API anatomy: endpoint + auth + request → response
+  - Created .env.example template for secure key storage
+  - Built sdk_example.py (Anthropic SDK usage)
+  - Built raw_http_example.py (understanding under-the-hood)
+  - Built test_error_handling.py (authentication errors)
+  - Installed Anthropic SDK and tested error handling
+  - APIs needed: Anthropic (Phase 11+), OpenAI (comparison), HuggingFace (models)
+
 ---
 
 ## Next Up:
-- [ ] Lesson 4: APIs and Keys
 - [ ] Lesson 5: Jupyter Notebooks
+- [ ] Lesson 6: Python Environments
 - [ ] Phase 1: Math Foundations
